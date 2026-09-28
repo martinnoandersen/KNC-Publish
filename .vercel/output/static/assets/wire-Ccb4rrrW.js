@@ -1,0 +1,1 @@
+import{r as e}from"./newsroom-DAPGNd-D.js";var t=e;export{t as component};

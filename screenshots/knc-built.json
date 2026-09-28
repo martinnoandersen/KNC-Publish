@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "KNC Publish",
+      "hasCanvas": false,
+      "bodyTextLen": 3158,
+      "bodyTextHash": "05147fdce0ee96d1970799b406b8b4f7f493f0afcc056ebb737203b01ca94ec0",
+      "bodyTextPrefix": "سەرەتا دووشەممە · 28 ئەیلوول 2026 · هەولێر kncsite.com هەولێر 24",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/knc-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "KNC Publish",
+      "hasCanvas": false,
+      "bodyTextLen": 3037,
+      "bodyTextHash": "b5767ed3faaa979fcce8a4da69145c4775a61fa2c94fd1857eb7e2dc290b3b6c",
+      "bodyTextPrefix": "سەرەتا دووشەممە · 28 ئەیلوول 2026 · هەولێر KNC KNC Publish هەواڵ",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/knc-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/knc-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}

@@ -1,0 +1,1 @@
+import{g as e}from"./middleware-BllGCv2u.js";import{b as t}from"./index-CnAilj-8.js";import{r as n}from"./ui-6LdzTJTE.js";var r=e(),i=()=>(0,r.jsx)(n,{children:(0,r.jsx)(t,{})});export{i as component};

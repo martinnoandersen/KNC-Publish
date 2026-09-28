@@ -1,0 +1,1 @@
+import{g as e}from"./middleware-BllGCv2u.js";import{l as t}from"./ui-6LdzTJTE.js";var n=e(),r=()=>(0,n.jsx)(t,{});export{r as component};

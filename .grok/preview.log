@@ -1,0 +1,206 @@
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 3:10:26 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/
+[db] PGLite bootstrap failed: Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.w$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:114:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+}
+TypeError: Cannot read properties of undefined (reading 'tagline')
+    at Object.head (file:///workspace/.vercel/output/functions/__server.func/_ssr/router-X7_gOthz.mjs:330:33)
+    at projectLane (file:///workspace/.vercel/output/functions/__server.func/_libs/@tanstack/react-router+%5B...%5D.mjs:3539:25)
+    at executeServerLane (file:///workspace/.vercel/output/functions/__server.func/_libs/@tanstack/react-router+%5B...%5D.mjs:3677:9)
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.w$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:114:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+}
+
+Node.js v22.23.3
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 3:10:26 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/
+node:internal/fs/promises:639
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/pglite.wasm'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.b$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:99:11) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/pglite.wasm'
+}
+
+Node.js v22.23.3
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 3:10:26 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/
+node:internal/fs/promises:639
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/pglite.wasm'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.b$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:99:11) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/pglite.wasm'
+}
+
+Node.js v22.23.3
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 3:10:26 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/
+node:internal/fs/promises:639
+  return new FileHandle(await PromisePrototypeThen(
+                        ^
+
+Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/initdb.wasm'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.b$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:99:11) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/initdb.wasm'
+}
+
+Node.js v22.23.3
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 3:10:26 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 4:25:33 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/
+[db] PGLite bootstrap failed: Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.w$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:114:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+}
+TypeError: Cannot read properties of undefined (reading 'tagline')
+    at Object.head (file:///workspace/.vercel/output/functions/__server.func/_ssr/router-X6q-UdJH.mjs:350:33)
+    at projectLane (file:///workspace/.vercel/output/functions/__server.func/_libs/@tanstack/react-router+%5B...%5D.mjs:3539:25)
+    at executeServerLane (file:///workspace/.vercel/output/functions/__server.func/_libs/@tanstack/react-router+%5B...%5D.mjs:3677:9)
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+Error: ENOENT: no such file or directory, open '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+    at async open (node:internal/fs/promises:639:25)
+    at async Module.readFile (node:internal/fs/promises:1252:14)
+    at async Object.w$2 (file:///workspace/.vercel/output/functions/__server.func/_libs/electric-sql__pglite.mjs:114:16) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/workspace/.vercel/output/functions/__server.func/_libs/pglite.data'
+}
+
+Node.js v22.23.3
+
+> preview
+> node scripts/with-app-env.mjs vite preview
+
+
+ ╭────────── [Build Info] ─────────────╮
+ │                                     │
+ │  - Build Directory: .vercel/output  │
+ │  - Date: 9/28/2026, 4:25:33 PM      │
+ │  - Nitro Version: 3.0.260610-beta   │
+ │  - Nitro Preset: vercel             │
+ │                                     │
+ ╰─────────────────────────────────────╯
+
+  ➜  Local:   http://127.0.0.1:8081/

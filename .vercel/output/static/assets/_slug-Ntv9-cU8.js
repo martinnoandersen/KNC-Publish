@@ -1,0 +1,1 @@
+import{g as e}from"./middleware-BllGCv2u.js";import{n as t}from"./home-DHP2rFhW.js";import{t as n}from"./shell-DWqG-Fbs.js";import{n as r}from"./index-CnAilj-8.js";var i=e(),a=function(){let e=r.useLoaderData(),{slug:a}=r.useParams(),o=e[0]?.tags.find(e=>e.slug===a)?.name??a;return(0,i.jsx)(n,{children:(0,i.jsx)(t,{stories:e,title:`#${o}`})})};export{a as component};

@@ -1,0 +1,1 @@
+import{g as e}from"./middleware-BllGCv2u.js";import{t}from"./shell-DWqG-Fbs.js";import{g as n}from"./index-CnAilj-8.js";import{i as r}from"./views-D_K1LIh_.js";var i=e(),a=function(){let e=n.useLoaderData();return(0,i.jsx)(t,{children:(0,i.jsx)(r,{rows:e})})};export{a as component};

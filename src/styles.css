@@ -1,0 +1,193 @@
+@import "tailwindcss";
+@import "@fontsource/noto-naskh-arabic/400.css";
+@import "@fontsource/noto-naskh-arabic/600.css";
+@import "@fontsource/noto-naskh-arabic/700.css";
+@import "@fontsource/noto-sans-hebrew/400.css";
+@import "@fontsource/noto-sans-hebrew/700.css";
+@import "@fontsource/scheherazade-new/400.css";
+@import "@fontsource/scheherazade-new/700.css";
+
+@theme {
+  --font-sans: "Source Sans 3", "Noto Naskh Arabic", "Segoe UI", sans-serif;
+  --font-serif: "Newsreader", "Noto Naskh Arabic", Georgia, "Times New Roman", serif;
+  --color-paper: #f6f3ec;
+  --color-sheet: #fffdf8;
+  --color-ink: #161513;
+  --color-muted: #5f5a53;
+  --color-rule: #ddd4c6;
+  --color-crimson: #8e1d2c;
+  --color-mast: #12110f;
+  --color-on-mast: #f6f3ec;
+  --color-soft: #efeae0;
+}
+
+html[data-theme="night"] {
+  --color-paper: #12110f;
+  --color-sheet: #1c1a17;
+  --color-ink: #f3efe6;
+  --color-muted: #b3ab9f;
+  --color-rule: #3a342c;
+  --color-crimson: #e15a68;
+  --color-mast: #0c0b0a;
+  --color-on-mast: #f3efe6;
+  --color-soft: #24211c;
+}
+
+html[data-theme="warm"] {
+  --color-paper: #f3e6d4;
+  --color-sheet: #fbf3e7;
+  --color-ink: #2a2118;
+  --color-muted: #6d5846;
+  --color-rule: #e0cdb6;
+  --color-crimson: #8c3a24;
+  --color-mast: #2a2118;
+  --color-on-mast: #fbf3e7;
+  --color-soft: #ead9c2;
+}
+
+html[dir="rtl"] {
+  --font-serif: "Noto Naskh Arabic", "Scheherazade New", serif;
+  --font-sans: "Noto Naskh Arabic", "Scheherazade New", sans-serif;
+}
+
+html[dir="rtl"] body,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4 {
+  font-family: "Noto Naskh Arabic", "Scheherazade New", serif;
+}
+
+html[lang="he"],
+html[lang="he"] body,
+html[lang="he"] h1,
+html[lang="he"] h2,
+html[lang="he"] h3,
+html[lang="he"] h4 {
+  --font-serif: "Noto Sans Hebrew", sans-serif;
+  --font-sans: "Noto Sans Hebrew", sans-serif;
+  font-family: "Noto Sans Hebrew", sans-serif;
+}
+
+html[dir="rtl"] .tracking-widest,
+html[dir="rtl"] .tracking-wide,
+html[dir="rtl"] .uppercase {
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.latin-face,
+html[dir="rtl"] .latin-face {
+  font-family: "Newsreader", Georgia, serif;
+  letter-spacing: 0.14em;
+  text-transform: none;
+}
+
+@font-face {
+  font-family: "Old London";
+  src: url("/fonts/old-london.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.old-english,
+html[dir="rtl"] .old-english {
+  font-family: "Old London", "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 1;
+  text-transform: none;
+}
+
+  img { max-width: 100%; }
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--color-crimson);
+    color: var(--color-on-mast);
+  }
+}
+
+.mega-item { position: relative; }
+.mega-panel {
+  display: none;
+  position: absolute;
+  z-index: 40;
+  min-width: 16rem;
+  inset-inline-start: 0;
+  top: 100%;
+  background: var(--color-sheet);
+  border: 1px solid var(--color-rule);
+  padding: 0.35rem 0;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 8%);
+}
+.mega-item:hover .mega-panel,
+.mega-item:focus-within .mega-panel { display: block; }
+
+@keyframes knc-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+.story-in { animation: knc-rise 280ms ease; }
+@media (prefers-reduced-motion: reduce) {
+  .story-in { animation: none; }
+}
+
+.drop > p:first-of-type::first-letter {
+  font-family: var(--font-serif);
+  float: inline-start;
+  font-size: 3.35rem;
+  line-height: 0.8;
+  padding-inline-end: 0.45rem;
+  font-weight: 600;
+  color: var(--color-crimson);
+}
+.aspect-news { aspect-ratio: 3 / 2; }
+.prose-news p { margin-top: 1.05rem; }
+html[dir="rtl"] .prose-news p,
+html[dir="rtl"] .prose-news li {
+  font-family: "Noto Naskh Arabic", "Scheherazade New", serif;
+  font-size: 1.5rem;
+  line-height: 2.05;
+}
+html[lang="he"] .prose-news p,
+html[lang="he"] .prose-news li {
+  font-family: "Noto Sans Hebrew", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.75;
+}
+html[dir="ltr"] .prose-news p,
+html[dir="ltr"] .prose-news li {
+  font-family: "Newsreader", Georgia, serif;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+html[data-type="s"][dir="rtl"] .prose-news p,
+html[data-type="s"][dir="rtl"] .prose-news li { font-size: 1.3rem; }
+html[data-type="l"][dir="rtl"] .prose-news p,
+html[data-type="l"][dir="rtl"] .prose-news li { font-size: 1.8rem; }
+html[data-type="s"][dir="ltr"] .prose-news p { font-size: 1.05rem; }
+html[data-type="l"][dir="ltr"] .prose-news p { font-size: 1.4rem; }
+
+@media print {
+  header, footer, nav, .no-print { display: none !important; }
+  body { background: white; color: black; }
+}
